@@ -94,3 +94,19 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.subtitle-break {
+  border: 0;
+  height: 2px;
+  background-color: #3498db;
+  margin: 4px 0;
+}
+
+p {
+  border-bottom: 1px solid red;
+}
+
+rt {
+  font-size: 6px;
+  display: none;
+}
