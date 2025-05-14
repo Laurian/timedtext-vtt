@@ -1,11 +1,21 @@
 {
-  "name": "timedtext-splitter",
-  "private": true,
-  "version": "0.0.0",
+  "name": "timedtext-formatter",
+  "version": "0.1.0",
+  "description": "A module for splitting timed text into captions",
   "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "clean": "rm -rf dist docs",
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:lib": "tsc --project tsconfig.lib.json",
+    "build:docs": "vite build --outDir docs",
+    "build:all": "npm run build:lib && npm run build:docs",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext ts,tsx --fix",
@@ -13,6 +23,7 @@
     "format:check": "prettier --check \"src/**/*.{ts,tsx}\""
   },
   "devDependencies": {
+    "@types/node": "^22.15.18",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.3.1",
     "eslint": "^8.57.0",

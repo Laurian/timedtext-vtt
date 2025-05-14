@@ -1,0 +1,1906 @@
+[
+  [
+      {
+          "text": "The",
+          "start": 245.33,
+          "duration": 0.17899999999997362,
+          "metadata": {}
+      },
+      {
+          "text": "Mayans",
+          "start": 245.52,
+          "duration": 0.6099999999999852,
+          "metadata": {}
+      },
+      {
+          "text": "were",
+          "start": 246.139,
+          "duration": 0.13100000000000023,
+          "metadata": {}
+      },
+      {
+          "text": "able",
+          "start": 246.279,
+          "duration": 0.271000000000015,
+          "metadata": {}
+      },
+      {
+          "text": "to",
+          "start": 246.559,
+          "duration": 0.09000000000000341,
+          "metadata": {}
+      },
+      {
+          "text": "calculate",
+          "start": 246.66,
+          "duration": 0.6899999999999977,
+          "metadata": {}
+      },
+      {
+          "text": "with",
+          "start": 247.36,
+          "duration": 0.228999999999985,
+          "metadata": {}
+      },
+      {
+          "text": "great",
+          "start": 247.6,
+          "duration": 0.3100000000000023,
+          "metadata": {}
+      },
+      {
+          "text": "precision,",
+          "start": 247.919,
+          "duration": 0.41100000000000136,
+          "metadata": {}
+      },
+      {
+          "text": "great",
+          "start": 248.339,
+          "duration": 0.18999999999999773,
+          "metadata": {}
+      },
+      {
+          "text": "precision,",
+          "start": 248.539,
+          "duration": 0.5710000000000264,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 249.27,
+          "duration": 0.17900000000000205,
+          "metadata": {}
+      }
+,
+      {
+          "text": "predictions,",
+          "start": 249.46,
+          "duration": 0.7090000000000032,
+          "metadata": {}
+      },
+      {
+          "text": "for",
+          "start": 250.179,
+          "duration": 0.10999999999998522,
+          "metadata": {}
+      },
+      {
+          "text": "example,",
+          "start": 250.3,
+          "duration": 0.46999999999999886,
+          "metadata": {}
+      },
+      {
+          "text": "for",
+          "start": 250.779,
+          "duration": 0.10099999999999909,
+          "metadata": {}
+      },
+      {
+          "text": "eclipses",
+          "start": 250.889,
+          "duration": 0.6009999999999991,
+          "metadata": {}
+      },
+      {
+          "text": "and",
+          "start": 251.5,
+          "duration": 0.0800000000000125,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 251.589,
+          "duration": 0.04099999999999682,
+          "metadata": {}
+      },
+      {
+          "text": "position",
+          "start": 251.639,
+          "duration": 0.4199999999999875,
+          "metadata": {}
+      },
+      {
+          "text": "of",
+          "start": 252.07,
+          "duration": 0.07900000000000773,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 252.16,
+          "duration": 0.05000000000001137,
+          "metadata": {}
+      },
+      {
+          "text": "moon",
+          "start": 252.22,
+          "duration": 0.25900000000001455,
+          "metadata": {}
+      },
+      {
+          "text": "in",
+          "start": 252.49,
+          "duration": 0.07999999999998408,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 252.58,
+          "duration": 0.07999999999998408,
+          "metadata": {}
+      }
+,
+      {
+          "text": "sky,",
+          "start": 252.669,
+          "duration": 0.3810000000000002,
+          "metadata": {}
+      },
+      {
+          "text": "a",
+          "start": 253.059,
+          "duration": 0.01099999999999568,
+          "metadata": {}
+      },
+      {
+          "text": "position",
+          "start": 253.08,
+          "duration": 0.38999999999998636,
+          "metadata": {}
+      },
+      {
+          "text": "of",
+          "start": 253.479,
+          "duration": 0.13100000000000023,
+          "metadata": {}
+      },
+      {
+          "text": "Venus",
+          "start": 253.619,
+          "duration": 0.2909999999999968,
+          "metadata": {}
+      },
+      {
+          "text": "and",
+          "start": 253.919,
+          "duration": 0.11999999999997613,
+          "metadata": {}
+      },
+      {
+          "text": "science.",
+          "start": 254.05,
+          "duration": 0.3990000000000009,
+          "metadata": {}
+      },
+      {
+          "text": "However,",
+          "start": 255.16,
+          "duration": 0.3900000000000148,
+          "metadata": {}
+      },
+      {
+          "text": "it",
+          "start": 255.559,
+          "duration": 0.021000000000015007,
+          "metadata": {}
+      },
+      {
+          "text": "was",
+          "start": 255.589,
+          "duration": 0.060000000000002274,
+          "metadata": {}
+      },
+      {
+          "text": "all",
+          "start": 255.66,
+          "duration": 0.1490000000000009,
+          "metadata": {}
+      },
+      {
+          "text": "done",
+          "start": 255.82,
+          "duration": 0.17000000000001592,
+          "metadata": {}
+      },
+      {
+          "text": "by",
+          "start": 256,
+          "duration": 0.19999999999998863,
+          "metadata": {}
+      },
+      {
+          "text": "arithmetic.",
+          "start": 256.209,
+          "duration": 0.7409999999999854,
+          "metadata": {}
+      }
+,
+      {
+          "text": "If",
+          "start": 257.29,
+          "duration": 0.019000000000005457,
+          "metadata": {}
+      },
+      {
+          "text": "you",
+          "start": 257.32,
+          "duration": 0.06999999999999318,
+          "metadata": {}
+      },
+      {
+          "text": "count",
+          "start": 257.399,
+          "duration": 0.2799999999999727,
+          "metadata": {}
+      },
+      {
+          "text": "of",
+          "start": 257.69,
+          "duration": 0.019000000000005457,
+          "metadata": {}
+      },
+      {
+          "text": "certain",
+          "start": 257.72,
+          "duration": 0.2689999999999486,
+          "metadata": {}
+      },
+      {
+          "text": "numbers,",
+          "start": 258,
+          "duration": 0.4200000000000159,
+          "metadata": {}
+      },
+      {
+          "text": "you",
+          "start": 258.429,
+          "duration": 0.07100000000002638,
+          "metadata": {}
+      },
+      {
+          "text": "attract",
+          "start": 258.51,
+          "duration": 0.4399999999999977,
+          "metadata": {}
+      },
+      {
+          "text": "some",
+          "start": 258.959,
+          "duration": 0.24099999999998545,
+          "metadata": {}
+      },
+      {
+          "text": "numbers",
+          "start": 259.209,
+          "duration": 0.39100000000001955,
+          "metadata": {}
+      },
+      {
+          "text": "and",
+          "start": 259.609,
+          "duration": 0.12100000000003774,
+          "metadata": {}
+      },
+      {
+          "text": "so",
+          "start": 259.739,
+          "duration": 0.060000000000002274,
+          "metadata": {}
+      },
+      {
+          "text": "on.",
+          "start": 259.809,
+          "duration": 0.339999999999975,
+          "metadata": {}
+      },
+      {
+          "text": "There",
+          "start": 260.44,
+          "duration": 0.18999999999999773,
+          "metadata": {}
+      }
+,
+      {
+          "text": "was",
+          "start": 260.64,
+          "duration": 0.15899999999999181,
+          "metadata": {}
+      },
+      {
+          "text": "no",
+          "start": 260.809,
+          "duration": 0.10099999999999909,
+          "metadata": {}
+      },
+      {
+          "text": "discussion",
+          "start": 260.92,
+          "duration": 0.589999999999975,
+          "metadata": {}
+      },
+      {
+          "text": "of",
+          "start": 261.519,
+          "duration": 0.040000000000020464,
+          "metadata": {}
+      },
+      {
+          "text": "what",
+          "start": 261.57,
+          "duration": 0.20900000000000318,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 261.79,
+          "duration": 0.060000000000002274,
+          "metadata": {}
+      },
+      {
+          "text": "moon",
+          "start": 261.859,
+          "duration": 0.37999999999999545,
+          "metadata": {}
+      },
+      {
+          "text": "was.",
+          "start": 262.25,
+          "duration": 0.660000000000025,
+          "metadata": {}
+      },
+      {
+          "text": "There",
+          "start": 263.76,
+          "duration": 0.18000000000000682,
+          "metadata": {}
+      },
+      {
+          "text": "wasn't",
+          "start": 263.95,
+          "duration": 0.21000000000003638,
+          "metadata": {}
+      },
+      {
+          "text": "even",
+          "start": 264.17,
+          "duration": 0.2400000000000091,
+          "metadata": {}
+      },
+      {
+          "text": "a",
+          "start": 264.42,
+          "duration": 0.008999999999957708,
+          "metadata": {}
+      },
+      {
+          "text": "discussion",
+          "start": 264.44,
+          "duration": 0.660000000000025,
+          "metadata": {}
+      },
+      {
+          "text": "of",
+          "start": 265.109,
+          "duration": 0.18999999999999773,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 265.309,
+          "duration": 0.11099999999999,
+          "metadata": {}
+      }
+,
+      {
+          "text": "idea",
+          "start": 265.429,
+          "duration": 0.35000000000002274,
+          "metadata": {}
+      },
+      {
+          "text": "that",
+          "start": 265.79,
+          "duration": 0.12000000000000455,
+          "metadata": {}
+      },
+      {
+          "text": "it",
+          "start": 265.92,
+          "duration": 0.03899999999998727,
+          "metadata": {}
+      },
+      {
+          "text": "went",
+          "start": 265.97,
+          "duration": 0.1490000000000009,
+          "metadata": {}
+      },
+      {
+          "text": "around.",
+          "start": 266.13,
+          "duration": 0.5,
+          "metadata": {}
+      },
+      {
+          "text": "There",
+          "start": 266.64,
+          "duration": 0.06900000000001683,
+          "metadata": {}
+      },
+      {
+          "text": "was",
+          "start": 266.72,
+          "duration": 0.1490000000000009,
+          "metadata": {}
+      },
+      {
+          "text": "only",
+          "start": 266.88,
+          "duration": 0.4189999999999827,
+          "metadata": {}
+      },
+      {
+          "text": "calculate",
+          "start": 267.309,
+          "duration": 0.6409999999999627,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 267.959,
+          "duration": 0.08999999999997499,
+          "metadata": {}
+      },
+      {
+          "text": "time",
+          "start": 268.059,
+          "duration": 0.3699999999999477,
+          "metadata": {}
+      },
+      {
+          "text": "when",
+          "start": 268.44,
+          "duration": 0.10899999999998045,
+          "metadata": {}
+      },
+      {
+          "text": "there",
+          "start": 268.559,
+          "duration": 0.08099999999996044,
+          "metadata": {}
+      },
+      {
+          "text": "would",
+          "start": 268.649,
+          "duration": 0.12000000000000455,
+          "metadata": {}
+      }
+,
+      {
+          "text": "be",
+          "start": 268.779,
+          "duration": 0.10099999999999909,
+          "metadata": {}
+      },
+      {
+          "text": "an",
+          "start": 268.89,
+          "duration": 0.09899999999998954,
+          "metadata": {}
+      },
+      {
+          "text": "eclipse",
+          "start": 269,
+          "duration": 0.35899999999998045,
+          "metadata": {}
+      },
+      {
+          "text": "or",
+          "start": 269.369,
+          "duration": 0.08099999999996044,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 269.459,
+          "duration": 0.08999999999997499,
+          "metadata": {}
+      },
+      {
+          "text": "time",
+          "start": 269.559,
+          "duration": 0.3509999999999991,
+          "metadata": {}
+      },
+      {
+          "text": "when",
+          "start": 269.92,
+          "duration": 0.12000000000000455,
+          "metadata": {}
+      },
+      {
+          "text": "it",
+          "start": 270.049,
+          "duration": 0.03000000000002956,
+          "metadata": {}
+      },
+      {
+          "text": "would",
+          "start": 270.089,
+          "duration": 0.17099999999999227,
+          "metadata": {}
+      },
+      {
+          "text": "rise",
+          "start": 270.269,
+          "duration": 0.6510000000000105,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 271.29,
+          "duration": 0.16899999999998272,
+          "metadata": {}
+      },
+      {
+          "text": "full",
+          "start": 271.47,
+          "duration": 0.2899999999999636,
+          "metadata": {}
+      },
+      {
+          "text": "moon",
+          "start": 271.769,
+          "duration": 0.3009999999999877,
+          "metadata": {}
+      },
+      {
+          "text": "and",
+          "start": 272.079,
+          "duration": 0.11099999999999,
+          "metadata": {}
+      },
+      {
+          "text": "when",
+          "start": 272.2,
+          "duration": 0.10900000000003729,
+          "metadata": {}
+      },
+      {
+          "text": "it",
+          "start": 272.32,
+          "duration": 0.03899999999998727,
+          "metadata": {}
+      },
+      {
+          "text": "would",
+          "start": 272.369,
+          "duration": 0.1309999999999718,
+          "metadata": {}
+      }
+ ,
+      {
+          "text": "rise",
+          "start": 272.51,
+          "duration": 0.5300000000000296,
+          "metadata": {}
+      },
+      {
+          "text": "half",
+          "start": 273.13,
+          "duration": 0.3199999999999932,
+          "metadata": {}
+      },
+      {
+          "text": "moon",
+          "start": 273.47,
+          "duration": 0.16999999999995907,
+          "metadata": {}
+      },
+      {
+          "text": "and",
+          "start": 273.649,
+          "duration": 0.11099999999999,
+          "metadata": {}
+      },
+      {
+          "text": "so",
+          "start": 273.769,
+          "duration": 0.08100000000001728,
+          "metadata": {}
+      },
+      {
+          "text": "on,",
+          "start": 273.859,
+          "duration": 0.14100000000001955,
+          "metadata": {}
+      },
+      {
+          "text": "just",
+          "start": 274.01,
+          "duration": 0.21000000000003638,
+          "metadata": {}
+      },
+      {
+          "text": "calculate",
+          "start": 274.23,
+          "duration": 0.589999999999975,
+          "metadata": {}
+      },
+      {
+          "text": "it",
+          "start": 274.829,
+          "duration": 0.06099999999997863,
+          "metadata": {}
+      },
+      {
+          "text": "only",
+          "start": 274.899,
+          "duration": 0.7200000000000273,
+          "metadata": {}
+      },
+      {
+          "text": "suppose",
+          "start": 275.709,
+          "duration": 0.5600000000000023,
+          "metadata": {}
+      },
+      {
+          "text": "that",
+          "start": 276.279,
+          "duration": 0.14100000000001955,
+          "metadata": {}
+      },
+      {
+          "text": "a",
+          "start": 276.429,
+          "duration": 0.011000000000024102,
+          "metadata": {}
+      },
+      {
+          "text": "young",
+          "start": 276.45,
+          "duration": 0.37000000000000455,
+          "metadata": {}
+      },
+      {
+          "text": "man",
+          "start": 276.829,
+          "duration": 0.5910000000000082,
+          "metadata": {}
+      },
+      {
+          "text": "went",
+          "start": 277.489,
+          "duration": 0.21100000000001273,
+          "metadata": {}
+      }
+,
+      {
+          "text": "to",
+          "start": 277.709,
+          "duration": 0.029999999999972715,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 277.75,
+          "duration": 0.1490000000000009,
+          "metadata": {}
+      },
+      {
+          "text": "astronomer",
+          "start": 277.91,
+          "duration": 0.5489999999999782,
+          "metadata": {}
+      },
+      {
+          "text": "and",
+          "start": 278.47,
+          "duration": 0.12999999999999545,
+          "metadata": {}
+      },
+      {
+          "text": "said,",
+          "start": 278.609,
+          "duration": 0.4700000000000273,
+          "metadata": {}
+      },
+      {
+          "text": "I",
+          "start": 279.54,
+          "duration": 0.07900000000000773,
+          "metadata": {}
+      },
+      {
+          "text": "have",
+          "start": 279.63,
+          "duration": 0.28000000000002956,
+          "metadata": {}
+      },
+      {
+          "text": "an",
+          "start": 279.92,
+          "duration": 0.07999999999998408,
+          "metadata": {}
+      },
+      {
+          "text": "idea,",
+          "start": 280.01,
+          "duration": 0.5300000000000296,
+          "metadata": {}
+      },
+      {
+          "text": "maybe",
+          "start": 280.72,
+          "duration": 0.38899999999995316,
+          "metadata": {}
+      },
+      {
+          "text": "those",
+          "start": 281.119,
+          "duration": 0.20099999999996498,
+          "metadata": {}
+      },
+      {
+          "text": "things",
+          "start": 281.329,
+          "duration": 0.15999999999996817,
+          "metadata": {}
+      },
+      {
+          "text": "are",
+          "start": 281.5,
+          "duration": 0.08899999999999864,
+          "metadata": {}
+      },
+      {
+          "text": "going",
+          "start": 281.6,
+          "duration": 0.2899999999999636,
+          "metadata": {}
+      },
+      {
+          "text": "around",
+          "start": 281.899,
+          "duration": 0.75,
+          "metadata": {}
+      }
+,
+      {
+          "text": "and",
+          "start": 282.66,
+          "duration": 0.2799999999999727,
+          "metadata": {}
+      },
+      {
+          "text": "there",
+          "start": 282.95,
+          "duration": 0.05000000000001137,
+          "metadata": {}
+      },
+      {
+          "text": "are",
+          "start": 283.01,
+          "duration": 0.060000000000002274,
+          "metadata": {}
+      },
+      {
+          "text": "balls",
+          "start": 283.079,
+          "duration": 0.6599999999999682,
+          "metadata": {}
+      },
+      {
+          "text": "of",
+          "start": 283.75,
+          "duration": 0.4289999999999736,
+          "metadata": {}
+      },
+      {
+          "text": "rocks",
+          "start": 284.19,
+          "duration": 0.5,
+          "metadata": {}
+      },
+      {
+          "text": "like",
+          "start": 284.7,
+          "duration": 0.3100000000000023,
+          "metadata": {}
+      },
+      {
+          "text": "rocks",
+          "start": 285.019,
+          "duration": 0.40100000000001046,
+          "metadata": {}
+      },
+      {
+          "text": "out",
+          "start": 285.429,
+          "duration": 0.22000000000002728,
+          "metadata": {}
+      },
+      {
+          "text": "there.",
+          "start": 285.66,
+          "duration": 0.18999999999999773,
+          "metadata": {}
+      },
+      {
+          "text": "We",
+          "start": 285.859,
+          "duration": 0.11100000000004684,
+          "metadata": {}
+      },
+      {
+          "text": "could",
+          "start": 285.98,
+          "duration": 0.12000000000000455,
+          "metadata": {}
+      },
+      {
+          "text": "calculate",
+          "start": 286.109,
+          "duration": 0.4700000000000273,
+          "metadata": {}
+      },
+      {
+          "text": "how",
+          "start": 286.589,
+          "duration": 0.14100000000001955,
+          "metadata": {}
+      },
+      {
+          "text": "they",
+          "start": 286.739,
+          "duration": 0.10000000000002274,
+          "metadata": {}
+      }
+,
+      {
+          "text": "move",
+          "start": 286.85,
+          "duration": 0.3289999999999509,
+          "metadata": {}
+      },
+      {
+          "text": "in",
+          "start": 287.19,
+          "duration": 0.07900000000000773,
+          "metadata": {}
+      },
+      {
+          "text": "a",
+          "start": 287.279,
+          "duration": 0.011000000000024102,
+          "metadata": {}
+      },
+      {
+          "text": "completely",
+          "start": 287.299,
+          "duration": 0.43100000000004,
+          "metadata": {}
+      },
+      {
+          "text": "different",
+          "start": 287.739,
+          "duration": 0.32000000000005,
+          "metadata": {}
+      },
+      {
+          "text": "way",
+          "start": 288.07,
+          "duration": 0.28899999999998727,
+          "metadata": {}
+      },
+      {
+          "text": "and",
+          "start": 288.369,
+          "duration": 0.11099999999999,
+          "metadata": {}
+      },
+      {
+          "text": "just",
+          "start": 288.489,
+          "duration": 0.160000000000025,
+          "metadata": {}
+      },
+      {
+          "text": "calculate",
+          "start": 288.66,
+          "duration": 0.6789999999999736,
+          "metadata": {}
+      },
+      {
+          "text": "what",
+          "start": 289.619,
+          "duration": 0.5209999999999582,
+          "metadata": {}
+      },
+      {
+          "text": "time",
+          "start": 290.149,
+          "duration": 0.5409999999999968,
+          "metadata": {}
+      },
+      {
+          "text": "they",
+          "start": 290.739,
+          "duration": 0.20100000000002183,
+          "metadata": {}
+      },
+      {
+          "text": "appear",
+          "start": 290.95,
+          "duration": 0.41900000000003956,
+          "metadata": {}
+      }
+,
+      {
+          "text": "in",
+          "start": 291.38,
+          "duration": 0.07900000000000773,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 291.47,
+          "duration": 0.05899999999996908,
+          "metadata": {}
+      },
+      {
+          "text": "sky",
+          "start": 291.54,
+          "duration": 0.39999999999997726,
+          "metadata": {}
+      },
+      {
+          "text": "and",
+          "start": 291.95,
+          "duration": 0.09899999999998954,
+          "metadata": {}
+      },
+      {
+          "text": "so",
+          "start": 292.059,
+          "duration": 0.1409999999999627,
+          "metadata": {}
+      },
+      {
+          "text": "on.",
+          "start": 292.209,
+          "duration": 0.18099999999998317,
+          "metadata": {}
+      },
+      {
+          "text": "So",
+          "start": 293.44,
+          "duration": 0.29899999999997817,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 293.75,
+          "duration": 0.1490000000000009,
+          "metadata": {}
+      },
+      {
+          "text": "of",
+          "start": 293.91,
+          "duration": 0.22999999999996135,
+          "metadata": {}
+      },
+      {
+          "text": "course,",
+          "start": 294.149,
+          "duration": 0.2799999999999727,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 294.44,
+          "duration": 0.060000000000002274,
+          "metadata": {}
+      },
+      {
+          "text": "Mayan",
+          "start": 294.51,
+          "duration": 0.28899999999998727,
+          "metadata": {}
+      },
+      {
+          "text": "astronomer",
+          "start": 294.809,
+          "duration": 0.45999999999997954,
+          "metadata": {}
+      },
+      {
+          "text": "would",
+          "start": 295.279,
+          "duration": 0.07999999999998408,
+          "metadata": {}
+      },
+      {
+          "text": "say",
+          "start": 295.369,
+          "duration": 0.11099999999999,
+          "metadata": {}
+      },
+      {
+          "text": "yes,",
+          "start": 295.489,
+          "duration": 0.4399999999999977,
+          "metadata": {}
+      }
+,
+      {
+          "text": "how",
+          "start": 297.26,
+          "duration": 0.3100000000000023,
+          "metadata": {}
+      },
+      {
+          "text": "accurate",
+          "start": 297.579,
+          "duration": 0.3410000000000082,
+          "metadata": {}
+      },
+      {
+          "text": "can",
+          "start": 297.929,
+          "duration": 0.1710000000000491,
+          "metadata": {}
+      },
+      {
+          "text": "you",
+          "start": 298.109,
+          "duration": 0.10000000000002274,
+          "metadata": {}
+      },
+      {
+          "text": "predict",
+          "start": 298.22,
+          "duration": 0.3990000000000009,
+          "metadata": {}
+      },
+      {
+          "text": "eclipses?",
+          "start": 298.63,
+          "duration": 0.7900000000000205,
+          "metadata": {}
+      },
+      {
+          "text": "He",
+          "start": 299.549,
+          "duration": 0.18999999999999773,
+          "metadata": {}
+      },
+      {
+          "text": "said,",
+          "start": 299.75,
+          "duration": 0.17000000000001592,
+          "metadata": {}
+      },
+      {
+          "text": "I",
+          "start": 299.929,
+          "duration": 0.03000000000002956,
+          "metadata": {}
+      },
+      {
+          "text": "haven't",
+          "start": 299.97,
+          "duration": 0.33899999999999864,
+          "metadata": {}
+      },
+      {
+          "text": "developed",
+          "start": 300.32,
+          "duration": 0.4000000000000341,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 300.73,
+          "duration": 0.04899999999997817,
+          "metadata": {}
+      },
+      {
+          "text": "thing",
+          "start": 300.79,
+          "duration": 0.2589999999999577,
+          "metadata": {}
+      }
+,
+      {
+          "text": "very",
+          "start": 301.059,
+          "duration": 0.25,
+          "metadata": {}
+      },
+      {
+          "text": "far",
+          "start": 301.32,
+          "duration": 0.478999999999985,
+          "metadata": {}
+      },
+      {
+          "text": "he",
+          "start": 301.809,
+          "duration": 0.11099999999999,
+          "metadata": {}
+      },
+      {
+          "text": "says,",
+          "start": 301.95,
+          "duration": 0.10900000000003729,
+          "metadata": {}
+      },
+      {
+          "text": "but",
+          "start": 302.07,
+          "duration": 0.1500000000000341,
+          "metadata": {}
+      },
+      {
+          "text": "we",
+          "start": 302.23,
+          "duration": 0.4300000000000068,
+          "metadata": {}
+      },
+      {
+          "text": "can",
+          "start": 302.67,
+          "duration": 0.2400000000000091,
+          "metadata": {}
+      },
+      {
+          "text": "calculate",
+          "start": 302.92,
+          "duration": 0.4490000000000123,
+          "metadata": {}
+      },
+      {
+          "text": "eclipses",
+          "start": 303.38,
+          "duration": 0.37999999999999545,
+          "metadata": {}
+      },
+      {
+          "text": "more",
+          "start": 303.769,
+          "duration": 0.24099999999998545,
+          "metadata": {}
+      },
+      {
+          "text": "accurately",
+          "start": 304.019,
+          "duration": 0.3709999999999809,
+          "metadata": {}
+      },
+      {
+          "text": "than",
+          "start": 304.399,
+          "duration": 0.12999999999999545,
+          "metadata": {}
+      },
+      {
+          "text": "you",
+          "start": 304.54,
+          "duration": 0.08999999999997499,
+          "metadata": {}
+      },
+      {
+          "text": "can",
+          "start": 304.64,
+          "duration": 0.2400000000000091,
+          "metadata": {}
+      }
+ ,
+      {
+          "text": "with",
+          "start": 304.89,
+          "duration": 0.1290000000000191,
+          "metadata": {}
+      },
+      {
+          "text": "your",
+          "start": 305.029,
+          "duration": 0.14999999999997726,
+          "metadata": {}
+      },
+      {
+          "text": "model.",
+          "start": 305.19,
+          "duration": 0.35899999999998045,
+          "metadata": {}
+      }
+  ],
+
+
+
+
+
+
+
+  [
+      {
+          "text": "And",
+          "start": 305.559,
+          "duration": 0.08099999999996044,
+          "metadata": {}
+      },
+      {
+          "text": "so",
+          "start": 305.649,
+          "duration": 0.17099999999999227,
+          "metadata": {}
+      },
+      {
+          "text": "you",
+          "start": 305.829,
+          "duration": 0.12999999999999545,
+          "metadata": {}
+      },
+      {
+          "text": "must",
+          "start": 305.97,
+          "duration": 0.2389999999999759,
+          "metadata": {}
+      },
+      {
+          "text": "not",
+          "start": 306.22,
+          "duration": 0.1490000000000009,
+          "metadata": {}
+      },
+      {
+          "text": "pay",
+          "start": 306.38,
+          "duration": 0.13900000000001,
+          "metadata": {}
+      },
+      {
+          "text": "any",
+          "start": 306.529,
+          "duration": 0.12000000000000455,
+          "metadata": {}
+      },
+      {
+          "text": "attention",
+          "start": 306.66,
+          "duration": 0.36899999999997135,
+          "metadata": {}
+      },
+      {
+          "text": "because",
+          "start": 307.07,
+          "duration": 0.16899999999998272,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 307.25,
+          "duration": 0.10000000000002274,
+          "metadata": {}
+      },
+      {
+          "text": "mathematical",
+          "start": 307.359,
+          "duration": 0.5910000000000082,
+          "metadata": {}
+      },
+      {
+          "text": "scheme",
+          "start": 307.959,
+          "duration": 0.3009999999999877,
+          "metadata": {}
+      },
+      {
+          "text": "is",
+          "start": 308.269,
+          "duration": 0.08100000000001728,
+          "metadata": {}
+      },
+      {
+          "text": "better.",
+          "start": 308.359,
+          "duration": 0.4910000000000423,
+          "metadata": {}
+      }
+,
+      {
+          "text": "And",
+          "start": 308.929,
+          "duration": 0.20100000000002183,
+          "metadata": {}
+      },
+      {
+          "text": "there's",
+          "start": 309.14,
+          "duration": 0.05000000000001137,
+          "metadata": {}
+      },
+      {
+          "text": "a",
+          "start": 309.2,
+          "duration": 0.009000000000014552,
+          "metadata": {}
+      },
+      {
+          "text": "very",
+          "start": 309.22,
+          "duration": 0.29899999999997817,
+          "metadata": {}
+      },
+      {
+          "text": "strong",
+          "start": 309.529,
+          "duration": 0.34000000000003183,
+          "metadata": {}
+      },
+      {
+          "text": "tendency",
+          "start": 309.88,
+          "duration": 0.478999999999985,
+          "metadata": {}
+      },
+      {
+          "text": "of",
+          "start": 310.369,
+          "duration": 0.07099999999996953,
+          "metadata": {}
+      },
+      {
+          "text": "people",
+          "start": 310.45,
+          "duration": 0.34899999999998954,
+          "metadata": {}
+      },
+      {
+          "text": "to",
+          "start": 310.809,
+          "duration": 0.08099999999996044,
+          "metadata": {}
+      },
+      {
+          "text": "say",
+          "start": 310.899,
+          "duration": 0.339999999999975,
+          "metadata": {}
+      },
+      {
+          "text": "against",
+          "start": 311.25,
+          "duration": 0.4700000000000273,
+          "metadata": {}
+      },
+      {
+          "text": "some",
+          "start": 311.73,
+          "duration": 0.28899999999998727,
+          "metadata": {}
+      },
+      {
+          "text": "idea",
+          "start": 312.26,
+          "duration": 0.4300000000000068,
+          "metadata": {}
+      },
+      {
+          "text": "if",
+          "start": 312.929,
+          "duration": 0.04100000000005366,
+          "metadata": {}
+      },
+      {
+          "text": "someone",
+          "start": 313.14,
+          "duration": 0.4689999999999941,
+          "metadata": {}
+      }
+,
+      {
+          "text": "comes",
+          "start": 313.619,
+          "duration": 0.23099999999999454,
+          "metadata": {}
+      },
+      {
+          "text": "up",
+          "start": 313.859,
+          "duration": 0.12999999999999545,
+          "metadata": {}
+      },
+      {
+          "text": "with",
+          "start": 314,
+          "duration": 0.1190000000000282,
+          "metadata": {}
+      },
+      {
+          "text": "an",
+          "start": 314.13,
+          "duration": 0.04899999999997817,
+          "metadata": {}
+      },
+      {
+          "text": "idea.",
+          "start": 314.19,
+          "duration": 0.3690000000000282,
+          "metadata": {}
+      },
+      {
+          "text": "So",
+          "start": 314.57,
+          "duration": 0.12000000000000455,
+          "metadata": {}
+      },
+      {
+          "text": "let's",
+          "start": 314.7,
+          "duration": 0.22000000000002728,
+          "metadata": {}
+      },
+      {
+          "text": "suppose",
+          "start": 314.929,
+          "duration": 0.4000000000000341,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 315.339,
+          "duration": 0.08100000000001728,
+          "metadata": {}
+      },
+      {
+          "text": "world",
+          "start": 315.429,
+          "duration": 0.28000000000002956,
+          "metadata": {}
+      },
+      {
+          "text": "is",
+          "start": 315.72,
+          "duration": 0.07899999999995089,
+          "metadata": {}
+      },
+      {
+          "text": "this",
+          "start": 315.809,
+          "duration": 0.21999999999997044,
+          "metadata": {}
+      },
+      {
+          "text": "way.",
+          "start": 316.04,
+          "duration": 0.37999999999999545,
+          "metadata": {}
+      },
+      {
+          "text": "And",
+          "start": 316.609,
+          "duration": 0.2300000000000182,
+          "metadata": {}
+      },
+      {
+          "text": "you",
+          "start": 316.85,
+          "duration": 0.12999999999999545,
+          "metadata": {}
+      },
+      {
+          "text": "say",
+          "start": 316.989,
+          "duration": 0.2310000000000514,
+          "metadata": {}
+      }
+,
+      {
+          "text": "to",
+          "start": 317.23,
+          "duration": 0.20999999999997954,
+          "metadata": {}
+      },
+      {
+          "text": "him,",
+          "start": 317.45,
+          "duration": 0.10900000000003729,
+          "metadata": {}
+      },
+      {
+          "text": "well,",
+          "start": 317.57,
+          "duration": 0.3100000000000023,
+          "metadata": {}
+      },
+      {
+          "text": "how",
+          "start": 317.89,
+          "duration": 0.16900000000003956,
+          "metadata": {}
+      },
+      {
+          "text": "would",
+          "start": 318.07,
+          "duration": 0.12999999999999545,
+          "metadata": {}
+      },
+      {
+          "text": "you",
+          "start": 318.209,
+          "duration": 0.10000000000002274,
+          "metadata": {}
+      },
+      {
+          "text": "get,",
+          "start": 318.32,
+          "duration": 0.160000000000025,
+          "metadata": {}
+      },
+      {
+          "text": "what",
+          "start": 318.489,
+          "duration": 0.160000000000025,
+          "metadata": {}
+      },
+      {
+          "text": "would",
+          "start": 318.66,
+          "duration": 0.12999999999999545,
+          "metadata": {}
+      },
+      {
+          "text": "you",
+          "start": 318.799,
+          "duration": 0.060000000000002274,
+          "metadata": {}
+      },
+      {
+          "text": "get",
+          "start": 318.869,
+          "duration": 0.27099999999995816,
+          "metadata": {}
+      },
+      {
+          "text": "for",
+          "start": 319.149,
+          "duration": 0.07100000000002638,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 319.23,
+          "duration": 0.13900000000001,
+          "metadata": {}
+      },
+      {
+          "text": "answer",
+          "start": 319.38,
+          "duration": 0.29899999999997817,
+          "metadata": {}
+      },
+      {
+          "text": "for",
+          "start": 319.69,
+          "duration": 0.1190000000000282,
+          "metadata": {}
+      },
+      {
+          "text": "such",
+          "start": 319.82,
+          "duration": 0.228999999999985,
+          "metadata": {}
+      }
+ ,
+      {
+          "text": "and",
+          "start": 320.059,
+          "duration": 0.10099999999999909,
+          "metadata": {}
+      },
+      {
+          "text": "such",
+          "start": 320.17,
+          "duration": 0.18899999999996453,
+          "metadata": {}
+      },
+      {
+          "text": "a",
+          "start": 320.369,
+          "duration": 0.010999999999967258,
+          "metadata": {}
+      },
+      {
+          "text": "problem?",
+          "start": 320.39,
+          "duration": 0.5800000000000409,
+          "metadata": {}
+      },
+      {
+          "text": "And",
+          "start": 321.459,
+          "duration": 0.2610000000000241,
+          "metadata": {}
+      },
+      {
+          "text": "he",
+          "start": 321.73,
+          "duration": 0.07900000000000773,
+          "metadata": {}
+      },
+      {
+          "text": "says,",
+          "start": 321.82,
+          "duration": 0.160000000000025,
+          "metadata": {}
+      },
+      {
+          "text": "I",
+          "start": 321.989,
+          "duration": 0.011000000000024102,
+          "metadata": {}
+      },
+      {
+          "text": "haven't",
+          "start": 322.01,
+          "duration": 0.25900000000001455,
+          "metadata": {}
+      },
+      {
+          "text": "developed",
+          "start": 322.279,
+          "duration": 0.36099999999999,
+          "metadata": {}
+      },
+      {
+          "text": "it",
+          "start": 322.649,
+          "duration": 0.060000000000002274,
+          "metadata": {}
+      },
+      {
+          "text": "far",
+          "start": 322.72,
+          "duration": 0.2689999999999486,
+          "metadata": {}
+      },
+      {
+          "text": "enough",
+          "start": 323,
+          "duration": 0.7090000000000032,
+          "metadata": {}
+      },
+      {
+          "text": "and",
+          "start": 323.869,
+          "duration": 0.25,
+          "metadata": {}
+      },
+      {
+          "text": "you",
+          "start": 324.13,
+          "duration": 0.09000000000003183,
+          "metadata": {}
+      }
+,
+      {
+          "text": "say,",
+          "start": 324.23,
+          "duration": 0.25,
+          "metadata": {}
+      },
+      {
+          "text": "well,",
+          "start": 324.489,
+          "duration": 0.271000000000015,
+          "metadata": {}
+      },
+      {
+          "text": "we",
+          "start": 324.769,
+          "duration": 0.15100000000001046,
+          "metadata": {}
+      },
+      {
+          "text": "have",
+          "start": 324.929,
+          "duration": 0.1710000000000491,
+          "metadata": {}
+      },
+      {
+          "text": "already",
+          "start": 325.109,
+          "duration": 0.2410000000000423,
+          "metadata": {}
+      },
+      {
+          "text": "developed",
+          "start": 325.359,
+          "duration": 0.37999999999999545,
+          "metadata": {}
+      },
+      {
+          "text": "much",
+          "start": 325.75,
+          "duration": 0.2599999999999909,
+          "metadata": {}
+      },
+      {
+          "text": "further",
+          "start": 326.019,
+          "duration": 0.3199999999999932,
+          "metadata": {}
+      },
+      {
+          "text": "and",
+          "start": 326.35,
+          "duration": 0.04899999999997817,
+          "metadata": {}
+      },
+      {
+          "text": "we",
+          "start": 326.41,
+          "duration": 0.0999999999999659,
+          "metadata": {}
+      },
+      {
+          "text": "can",
+          "start": 326.519,
+          "duration": 0.1209999999999809,
+          "metadata": {}
+      },
+      {
+          "text": "get",
+          "start": 326.649,
+          "duration": 0.20999999999997954,
+          "metadata": {}
+      },
+      {
+          "text": "the",
+          "start": 326.869,
+          "duration": 0.14999999999997726,
+          "metadata": {}
+      },
+      {
+          "text": "answers",
+          "start": 327.029,
+          "duration": 0.3299999999999841,
+          "metadata": {}
+      }
+,
+      {
+          "text": "very",
+          "start": 327.369,
+          "duration": 0.20099999999996498,
+          "metadata": {}
+      },
+      {
+          "text": "accurately.",
+          "start": 327.579,
+          "duration": 0.6209999999999809,
+          "metadata": {}
+      },
+      {
+          "text": "So",
+          "start": 329.369,
+          "duration": 0.42099999999999227,
+          "metadata": {}
+      },
+      {
+          "text": "it",
+          "start": 329.799,
+          "duration": 0.15100000000001046,
+          "metadata": {}
+      },
+      {
+          "text": "is",
+          "start": 329.959,
+          "duration": 0.17099999999999227,
+          "metadata": {}
+      },
+      {
+          "text": "a",
+          "start": 330.14,
+          "duration": 0.009000000000014552,
+          "metadata": {}
+      },
+      {
+          "text": "problem",
+          "start": 330.16,
+          "duration": 0.5489999999999782,
+          "metadata": {}
+      },
+      {
+          "text": "as",
+          "start": 330.72,
+          "duration": 0.25,
+          "metadata": {}
+      },
+      {
+          "text": "to",
+          "start": 330.98,
+          "duration": 0.08999999999997499,
+          "metadata": {}
+      },
+      {
+          "text": "whether",
+          "start": 331.079,
+          "duration": 0.3499999999999659,
+          "metadata": {}
+      },
+      {
+          "text": "or",
+          "start": 331.44,
+          "duration": 0.1490000000000009,
+          "metadata": {}
+      },
+      {
+          "text": "not",
+          "start": 331.6,
+          "duration": 0.4289999999999736,
+          "metadata": {}
+      },
+      {
+          "text": "to",
+          "start": 332.04,
+          "duration": 0.20999999999997954,
+          "metadata": {}
+      },
+      {
+          "text": "worry",
+          "start": 332.26,
+          "duration": 0.299000000000035,
+          "metadata": {}
+      },
+      {
+          "text": "about",
+          "start": 332.57,
+          "duration": 0.34000000000003183,
+          "metadata": {}
+      },
+      {
+          "text": "philosophies",
+          "start": 332.92,
+          "duration": 0.7099999999999795,
+          "metadata": {}
+      }
+,
+      {
+          "text": "behind",
+          "start": 333.64,
+          "duration": 0.4600000000000364,
+          "metadata": {}
+      },
+      {
+          "text": "ideas.",
+          "start": 334.109,
+          "duration": 0.521000000000015,
+          "metadata": {}
+      }
+  ]
+]

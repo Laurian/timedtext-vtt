@@ -2,18 +2,146 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>timedtext-formatter</title>
+    <style>
+      :root {
+        font-family: system-ui, Helvetica, sans-serif;
+        line-height: 1.5;
+
+        /* color-scheme: light dark; */
+        color-scheme: dark;
+        color: rgba(255, 255, 255, 0.87);
+        background-color: #242424;
+
+        font-synthesis: none;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+
+
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        min-width: 720px;
+        min-height: 100vh;
+      }
+
+      #root {
+        min-width: 720px;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+      }
+
+
+      /* @media (prefers-color-scheme: light) {
+        :root {
+          color: #213547;
+          background-color: #ffffff;
+        }
+      } */
+
+      .subtitle-break {
+        border: 0;
+        height: 10px;
+        margin: 10px 0;
+      }
+
+      p + p {
+        margin-top: 50px;
+      }
+
+      rt {
+        font-size: 6px;
+        display: none;
+      }
+
+      .show-annotations rt {
+        display: ruby-text;
+      }
+
+      .show-annotations p[data-start]::before {
+        content: attr(data-start)'s 'attr(data-speaker);
+        font-size: 6px;
+        display: ruby-text;
+      }
+
+      .video {
+        aspect-ratio: 16/9;
+        width: 100%;
+        background-color: #111;
+      }
+
+      .controls {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      span.sos {
+        border-left: 1px solid #00ff00;
+      }
+
+      span.eos {
+        border-right: 1px solid #ff0000;
+      }
+
+      span.mpunct {
+        border-right: 1px solid yellow;
+      }
+
+      span.subtitleBreak::after {
+        position: absolute;
+        content: '¶';
+        color: #0000ff;
+      }
+
+
+
+    </style>
   </head>
   <body>
     <div id="root">
-      <fieldset>
-        <legend>Paragraphs</legend>
+      <h1>Timed Text Formatter</h1>
+      <div class="video"></div>
+      <div class="controls">
+        <label>
+          <input type="number" id="min-chars" step="1" size="2" value="37"/>
+          Min chars
+        </label>
+        <label>
+          <input type="number" id="max-chars" step="1" size="2" value="42" />
+          Max chars
+        </label>
+        <label>
+          <input type="number" id="max-duration" step="0.1" size="2" value="7" />
+          Max duration
+        </label>
+        <label>
+          <input type="number" id="max-gap" step="0.1" size="2" value="2" />
+          Max gap
+        </label>
+        <label>
+          <input type="checkbox" id="karaoke" checked />
+          Karaoke
+        </label>
+        <label>
+          <input type="checkbox" id="show-annotations" />
+          Show annotations
+        </label>
+      </div>
+      <div>
         <div id="paragraphs">
         </div>
-      </fieldset>
+      </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/example.ts"></script>
   </body>
 </html>

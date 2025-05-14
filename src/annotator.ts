@@ -1,11 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import './style.css';
 
-import data from './data/paragraphs.json';
-
-interface TokenMetadata {
+export interface TokenMetadata {
+  speaker?: string; // TODO: add speaker
   sos?: boolean; // Start of sentence
   eos?: boolean; // End of sentence
   epunct?: boolean; // Has punctuation at the end
@@ -20,7 +18,7 @@ interface TokenMetadata {
   subtitleBreak?: boolean; // Good point for subtitle break
 }
 
-interface Token {
+export interface Token {
   text: string;
   start: number;
   offset?: number;
@@ -32,7 +30,7 @@ interface Token {
 /**
  * Adds metadata annotations to tokens that are useful for caption splitting
  */
-function annotateTokens(
+export function annotateTokens(
   paragraph: Token[],
   language: string = 'en',
   minChars = 37,
@@ -107,6 +105,12 @@ function annotateTokens(
     if (token) {
       token.metadata.sos = true;
     }
+    const lastToken = annotatedParagraph.find(
+      t => (t.offset ?? 0) + (t.length ?? 0) === sentence.index + sentence.length
+    );
+    if (lastToken) {
+      lastToken.metadata.eos = true;
+    }
   });
 
   // Mark end of sentence tokens
@@ -155,22 +159,23 @@ function annotateTokens(
         ((token.metadata.eos ?? false) || (token.metadata.punct ?? false)) &&
         token.metadata.chars <= maxChars
       ) {
+        // if the token is a sentence end or punctuation, accept it
         token.metadata.break = true;
         if (i < annotatedParagraph.length - 1) {
           annotatedParagraph.slice(i + 1).forEach(t => {
-            t.metadata.chars = (t.metadata.chars ?? 0) - (token.metadata.chars ?? 0);
+            t.metadata.chars = (t.metadata.chars ?? 0) - (token.metadata.chars ?? 0) - 1;
           });
         }
       } else if (
         (previousPreviousToken?.metadata?.punct ?? false) ||
         (previousPreviousToken?.metadata?.eos ?? false)
       ) {
-        // if the previous token has punctuation, accept it
+        // if the previous token has punctuation or is a sentence end, accept it
         previousPreviousToken.metadata.break = true;
         if (i < annotatedParagraph.length - 1) {
           annotatedParagraph.slice(i - 1).forEach(t => {
             t.metadata.chars =
-              (t.metadata.chars ?? 0) - (previousPreviousToken.metadata.chars ?? 0);
+              (t.metadata.chars ?? 0) - (previousPreviousToken.metadata.chars ?? 0) - 1;
           });
         }
         i--;
@@ -178,7 +183,7 @@ function annotateTokens(
         // split at the previous token
         previousToken.metadata.break = true;
         annotatedParagraph.slice(i).forEach(t => {
-          t.metadata.chars = (t.metadata.chars ?? 0) - (previousToken.metadata.chars ?? 0);
+          t.metadata.chars = (t.metadata.chars ?? 0) - (previousToken.metadata.chars ?? 0) - 1;
         });
       }
     }
@@ -231,64 +236,11 @@ function annotateTokens(
     }
   });
 
+  // mark the last token as a subtitle break if it's a sentence end
+  const lastToken = annotatedParagraph[annotatedParagraph.length - 1];
+  // if (lastToken?.metadata.eos ?? false) {
+  lastToken.metadata.subtitleBreak = true;
+  // }
+
   return annotatedParagraph;
 }
-
-const paragraphs = data as Token[][];
-
-// Annotate all paragraphs
-const annotatedParagraphs = paragraphs.map(paragraph => annotateTokens(paragraph));
-console.log(annotatedParagraphs);
-
-const paragraphsElement = document.querySelector<HTMLDivElement>('#paragraphs');
-
-annotatedParagraphs.forEach(paragraph => {
-  const paragraphElement = document.createElement('p');
-
-  paragraph.forEach(token => {
-    const tokenSpan = document.createElement('span');
-    tokenSpan.style.display = 'inline-block';
-
-    const ruby = document.createElement('ruby');
-    const text = document.createTextNode(token.text);
-    const rt = document.createElement('rt');
-
-    // Create annotation text showing metadata
-    const annotations: string[] = [];
-    for (const key in token.metadata) {
-      if (
-        Object.prototype.hasOwnProperty.call(token.metadata, key) &&
-        // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
-        (token.metadata[key as keyof TokenMetadata] ?? false)
-      ) {
-        if (key === 'chars' || key === 'lineDuration') {
-          annotations.push(token.metadata[key as keyof TokenMetadata]?.toString() ?? '');
-        } else annotations.push(key);
-      }
-    }
-
-    rt.textContent = annotations.join(', ');
-
-    ruby.appendChild(text);
-    ruby.appendChild(rt);
-    tokenSpan.appendChild(ruby);
-
-    paragraphElement.appendChild(tokenSpan);
-    if (token.metadata.break) {
-      paragraphElement.appendChild(document.createElement('br'));
-
-      // Add subtitle break indicator
-      if (token.metadata.subtitleBreak) {
-        const subtitleBreakIndicator = document.createElement('hr');
-        subtitleBreakIndicator.className = 'subtitle-break';
-        paragraphElement.appendChild(subtitleBreakIndicator);
-      }
-    } else {
-      paragraphElement.appendChild(document.createTextNode(' '));
-    }
-    // paragraphElement.appendChild(document.createTextNode(' '));
-  });
-
-  paragraphElement.classList.add('paragraph');
-  paragraphsElement!.appendChild(paragraphElement);
-});
