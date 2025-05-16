@@ -238,9 +238,8 @@ export function annotateTokens(
 
   // mark the last token as a subtitle break if it's a sentence end
   const lastToken = annotatedParagraph[annotatedParagraph.length - 1];
-  // if (lastToken?.metadata.eos ?? false) {
+  lastToken.metadata.break = true;
   lastToken.metadata.subtitleBreak = true;
-  // }
 
   return annotatedParagraph;
 }

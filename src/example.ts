@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { annotateTokens, type Token, type TokenMetadata } from './annotator';
-
+import { generateVTT } from './vtt';
 let paragraphs: Token[][] = [];
 let minChars = 37;
 let maxChars = 42;
@@ -7,11 +9,44 @@ let maxDuration = 7;
 let maxGap = 2;
 let karaoke = false;
 
+let videoSrc = '';
+let vtt = '';
 // Load sample data
 async function loadData() {
   try {
-    const response = await window.fetch('/sample.json');
-    const data = (await response.json()) as Token[][];
+    // const response = await window.fetch('/sample.json');
+    // const data = (await response.json()) as Token[][];
+    // paragraphs = data;
+
+    const response = await window.fetch('/sample2.json');
+    const {
+      metadata: { src },
+      segments,
+    } = (await response.json()) as {
+      metadata: { src: string };
+      segments: {
+        blocks: {
+          metadata: { speaker: string };
+          tokens: { text: string; start: number; end: number }[];
+        }[];
+      }[];
+    };
+
+    videoSrc = src;
+
+    const data = segments[0].blocks.map(({ metadata: { speaker }, tokens }) =>
+      tokens.map(({ text, start, end }) => {
+        const duration = end - start;
+        return {
+          text,
+          start,
+          duration,
+          metadata: {
+            speaker,
+          } as TokenMetadata,
+        } as Token;
+      })
+    );
 
     paragraphs = data;
   } catch (error) {
@@ -25,6 +60,8 @@ function processData() {
     annotateTokens(paragraph, 'en', minChars, maxChars, maxDuration, maxGap)
   );
   console.log(annotatedParagraphs);
+  vtt = generateVTT(annotatedParagraphs, karaoke);
+  console.log(vtt);
 
   // Display all paragraphs
   const paragraphsElement = document.querySelector<HTMLDivElement>('#paragraphs');
@@ -74,8 +111,18 @@ function processData() {
       ruby.appendChild(rt);
       tokenSpan.appendChild(ruby);
       tokenSpan.setAttribute('title', annotations.join(', '));
+      tokenSpan.setAttribute('data-start', token.start.toString());
 
       paragraphElement.appendChild(tokenSpan);
+
+      tokenSpan.addEventListener('click', ({ target }) => {
+        const start = (target as HTMLElement).closest('span')?.getAttribute('data-start');
+        const videoElement = document.querySelector<HTMLVideoElement>('#video video');
+        if (videoElement && start != null) {
+          videoElement.currentTime = parseFloat(start);
+        }
+      });
+
       if (token.metadata.break ?? false) {
         paragraphElement.appendChild(document.createElement('br'));
 
@@ -96,9 +143,53 @@ function processData() {
   });
 }
 
+function renderVideo() {
+  const videoWrapperElement = document.querySelector<HTMLDivElement>('#video');
+  videoWrapperElement!.innerHTML = '';
+
+  const videoElement = document.createElement('video');
+  videoElement.src = videoSrc;
+  videoElement.controls = true;
+  const vttUrl = URL.createObjectURL(new Blob([vtt], { type: 'text/vtt' }));
+  // videoElement.addTextTrack('subtitles', 'Subtitles', vttUrl);
+
+  const trackElement = document.createElement('track');
+  trackElement.src = vttUrl;
+  trackElement.default = true;
+  trackElement.kind = 'subtitles';
+  trackElement.srclang = 'en';
+  trackElement.label = 'Subtitles';
+
+  videoElement.appendChild(trackElement);
+  videoWrapperElement!.appendChild(videoElement);
+
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  const hls = new window.Hls();
+  hls.loadSource(videoSrc);
+  hls.attachMedia(videoElement);
+}
+
 async function main() {
   await loadData();
   processData();
+  renderVideo();
+  const videoElement = document.querySelector<HTMLVideoElement>('#video video');
+  if (videoElement) {
+    for (let i = 0; i < videoElement.textTracks.length; i++) {
+      videoElement.textTracks[i].mode = 'showing';
+    }
+  }
+}
+
+function reload() {
+  processData();
+  renderVideo();
+  const videoElement = document.querySelector<HTMLVideoElement>('#video video');
+  if (videoElement) {
+    for (let i = 0; i < videoElement.textTracks.length; i++) {
+      videoElement.textTracks[i].mode = 'showing';
+    }
+  }
 }
 
 // eslint-disable-next-line @typescript-eslint/no-floating-promises
@@ -113,29 +204,45 @@ showAnnotationsCheckbox?.addEventListener('change', () => {
 const minCharsInput = document.querySelector<HTMLInputElement>('#min-chars');
 minCharsInput?.addEventListener('change', () => {
   minChars = parseInt(minCharsInput.value);
-  processData();
+  reload();
 });
 
 const maxCharsInput = document.querySelector<HTMLInputElement>('#max-chars');
 maxCharsInput?.addEventListener('change', () => {
   maxChars = parseInt(maxCharsInput.value);
-  processData();
+  reload();
 });
 
 const maxDurationInput = document.querySelector<HTMLInputElement>('#max-duration');
 maxDurationInput?.addEventListener('change', () => {
   maxDuration = parseInt(maxDurationInput.value);
-  processData();
+  reload();
 });
 
 const maxGapInput = document.querySelector<HTMLInputElement>('#max-gap');
 maxGapInput?.addEventListener('change', () => {
   maxGap = parseInt(maxGapInput.value);
-  processData();
+  reload();
 });
 
 const karaokeCheckbox = document.querySelector<HTMLInputElement>('#karaoke');
 karaokeCheckbox?.addEventListener('change', () => {
   karaoke = karaokeCheckbox.checked;
-  processData();
+  reload();
 });
+
+// const reloadVideoButton = document.querySelector<HTMLButtonElement>('#reload-video');
+// reloadVideoButton?.addEventListener('click', () => {
+//   const videoWrapper = document.querySelector<HTMLDivElement>('#video');
+//   if (videoWrapper) {
+//     videoWrapper.innerHTML = '';
+//   }
+//   processData();
+//   renderVideo();
+//   const videoElement = document.querySelector<HTMLVideoElement>('#video video');
+//   if (videoElement) {
+//     for (let i = 0; i < videoElement.textTracks.length; i++) {
+//       videoElement.textTracks[i].mode = 'showing';
+//     }
+//   }
+// });
