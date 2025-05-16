@@ -12,7 +12,7 @@
     "dist"
   ],
   "scripts": {
-    "clean": "rm -rf dist docs",
+    "clean": "rm -rf dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "build:lib": "tsc --project tsconfig.lib.json",
