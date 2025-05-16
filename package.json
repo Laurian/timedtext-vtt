@@ -1,7 +1,9 @@
 {
-  "name": "timedtext-formatter",
+  "name": "timedtext-vtt",
   "version": "0.1.0",
   "description": "A module for splitting timed text into captions",
+  "author": "Laurian Gridinoc <laurian@gridinoc.name>",
+  "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -20,7 +22,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext ts,tsx --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx}\""
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "prepublishOnly": "npm run clean && npm run build:lib"
   },
   "devDependencies": {
     "@types/node": "^22.15.18",

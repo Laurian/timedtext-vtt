@@ -8,17 +8,16 @@ let maxChars = 42;
 let maxDuration = 7;
 let maxGap = 2;
 let karaoke = false;
+let minReadingSpeed = 20;
+let minLineDuration = 0.83;
 
 let videoSrc = '';
+const vttVersions: string[] = [];
 let vtt = '';
 // Load sample data
 async function loadData() {
   try {
-    // const response = await window.fetch('/sample.json');
-    // const data = (await response.json()) as Token[][];
-    // paragraphs = data;
-
-    const response = await window.fetch('/sample2.json');
+    const response = await window.fetch('/sample.json');
     const {
       metadata: { src },
       segments,
@@ -60,7 +59,8 @@ function processData() {
     annotateTokens(paragraph, 'en', minChars, maxChars, maxDuration, maxGap)
   );
   console.log(annotatedParagraphs);
-  vtt = generateVTT(annotatedParagraphs, karaoke);
+  vtt = generateVTT(annotatedParagraphs, karaoke, minReadingSpeed, minLineDuration);
+  vttVersions.push(vtt);
   console.log(vtt);
 
   // Display all paragraphs
@@ -68,7 +68,13 @@ function processData() {
   paragraphsElement!.innerHTML = '';
 
   annotatedParagraphs.forEach(paragraph => {
+    const wrapperElement = document.createElement('div');
+    wrapperElement.classList.add('paragraphBlock');
     const paragraphElement = document.createElement('p');
+    // const asideElement = document.createElement('aside');
+    // asideElement.innerText = 'aaa';
+    wrapperElement.appendChild(paragraphElement);
+    // wrapperElement.appendChild(asideElement);
 
     const firstToken = paragraph[0];
     const start = firstToken.start;
@@ -139,7 +145,7 @@ function processData() {
     });
 
     paragraphElement.classList.add('paragraph');
-    paragraphsElement!.appendChild(paragraphElement);
+    paragraphsElement!.appendChild(wrapperElement);
   });
 }
 
@@ -169,6 +175,26 @@ function renderVideo() {
   hls.attachMedia(videoElement);
 }
 
+function updateVideoTrack() {
+  const videoElement = document.querySelector<HTMLVideoElement>('#video video');
+  if (videoElement) {
+    // Remove all existing tracks
+    while (videoElement.firstChild) {
+      videoElement.removeChild(videoElement.firstChild);
+    }
+
+    // Add new track with updated VTT
+    const vttUrl = URL.createObjectURL(new Blob([vtt], { type: 'text/vtt' }));
+    const trackElement = document.createElement('track');
+    trackElement.src = vttUrl;
+    trackElement.default = true;
+    trackElement.kind = 'subtitles';
+    trackElement.srclang = 'en';
+    trackElement.label = 'Subtitles';
+    videoElement.appendChild(trackElement);
+  }
+}
+
 async function main() {
   await loadData();
   processData();
@@ -183,13 +209,14 @@ async function main() {
 
 function reload() {
   processData();
-  renderVideo();
+  updateVideoTrack();
   const videoElement = document.querySelector<HTMLVideoElement>('#video video');
   if (videoElement) {
     for (let i = 0; i < videoElement.textTracks.length; i++) {
       videoElement.textTracks[i].mode = 'showing';
     }
   }
+  showDiff();
 }
 
 // eslint-disable-next-line @typescript-eslint/no-floating-promises
@@ -246,3 +273,33 @@ karaokeCheckbox?.addEventListener('change', () => {
 //     }
 //   }
 // });
+
+const minReadingSpeedInput = document.querySelector<HTMLInputElement>('#min-reading-speed');
+minReadingSpeedInput?.addEventListener('change', () => {
+  minReadingSpeed = parseInt(minReadingSpeedInput.value);
+  reload();
+});
+
+const minLineDurationInput = document.querySelector<HTMLInputElement>('#min-line-duration');
+minLineDurationInput?.addEventListener('change', () => {
+  minLineDuration = parseFloat(minLineDurationInput.value);
+  reload();
+});
+
+function showDiff() {
+  // const diffContainer = document.querySelector<HTMLDivElement>('#diff-container');
+  // diffContainer!.innerHTML = '';
+  // // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  // const diff = window.jsdifflib.buildView({
+  //   baseText: vttVersions[0],
+  //   newText: vttVersions[1],
+  //   // set the display titles for each resource
+  //   baseTextName: 'Base Text',
+  //   newTextName: 'New Text',
+  //   contextSize: 10,
+  //   //set inine to true if you want inline
+  //   //rather than side by side diff
+  //   inline: true,
+  // });
+  // diffContainer!.appendChild(diff);
+}

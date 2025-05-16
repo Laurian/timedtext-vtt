@@ -1,0 +1,33 @@
+# Source files
+src/
+tests/
+__tests__/
+*.test.ts
+*.spec.ts
+
+# Development config files
+.editorconfig
+.eslintrc*
+.prettierrc*
+tsconfig*.json
+vite.config.ts
+.git/
+.github/
+.gitignore
+
+# Build and documentation
+docs/
+coverage/
+*.log
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Dependencies
+node_modules/
+
+public/
