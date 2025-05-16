@@ -17,7 +17,7 @@ let vtt = '';
 // Load sample data
 async function loadData() {
   try {
-    const response = await window.fetch('/sample.json');
+    const response = await window.fetch('./sample.json');
     const {
       metadata: { src },
       segments,
