@@ -25,7 +25,7 @@ export function generateVTT(
       }
     });
 
-    console.log({ lines });
+    // console.log({ lines });
 
     const cues: Token[][][] = [];
     let currentCue: Token[][] = [];
@@ -37,7 +37,7 @@ export function generateVTT(
       }
     });
 
-    console.log({ cues });
+    // console.log({ cues });
 
     cues.forEach((cue: Token[][], i) => {
       const tokens = cue.flat();
@@ -51,7 +51,7 @@ export function generateVTT(
 
       if (i < cues.length - 1) {
         const nextCue = cues[i + 1].flat();
-        console.log({ nextCue, nextStart: nextCue[0]?.start, cue });
+        // console.log({ nextCue, nextStart: nextCue[0]?.start, cue });
         maxEnd = Math.min(nextCue[0]?.start ?? nextBlockStart, maxEnd);
       }
 
@@ -63,9 +63,9 @@ export function generateVTT(
           end - start < minDuration ? minDuration - (end - start) : lineCount * minLineDuration;
         if (delta > 0 && end + delta < maxEnd) {
           end += delta;
-          console.log({ delta, end, minEnd, maxEnd, minDuration, cue });
+          // console.log({ delta, end, minEnd, maxEnd, minDuration, cue });
         } else if (delta > 0) {
-          console.log({ end, maxEnd, cue });
+          // console.log({ end, maxEnd, cue });
           end = maxEnd;
         }
       }

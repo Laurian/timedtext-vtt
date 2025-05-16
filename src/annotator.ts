@@ -91,6 +91,7 @@ export function annotateTokens(
     }
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const segmenter = new (Intl as any).Segmenter(language, { granularity: 'sentence' });
   const sentences = [
     ...segmenter.segment(paragraph.map(t => t.text).join(' '))[Symbol.iterator](),

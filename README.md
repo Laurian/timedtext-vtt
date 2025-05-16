@@ -31,7 +31,14 @@ const tokens: Token[] = [
 ];
 
 // Annotate tokens with metadata for caption splitting
-const annotatedTokens = annotateTokens(tokens, 'en', 37, 42, 7, 2);
+const annotatedTokens = annotateTokens(
+  tokens,
+  'en',    // Language code for sentence segmentation (e.g. 'en', 'fr', 'es')
+  37,      // Minimum characters per line before attempting a line break
+  42,      // Maximum characters per line before forcing a line break
+  7,       // Maximum duration in seconds for a single caption/cue
+  2        // Maximum gap in seconds between lines before splitting into separate captions
+);
 
 // The annotatedTokens now contain metadata helpful for splitting text
 // into captions, including:
@@ -66,31 +73,6 @@ track.src = URL.createObjectURL(new Blob([vtt], { type: 'text/vtt' }));
 video.appendChild(track);
 ```
 
-## API
-
-### annotateTokens(paragraph, language, minChars, maxChars, maxDuration, maxGap)
-
-Annotates tokens with metadata useful for caption splitting.
-
-- `paragraph`: An array of `Token` objects
-- `language`: Language code (default: 'en')
-- `minChars`: Minimum characters per line (default: 37)
-- `maxChars`: Maximum characters per line (default: 42)
-- `maxDuration`: Maximum duration for a subtitle (default: 7 seconds)
-- `maxGap`: Maximum gap between tokens (default: 2 seconds)
-
-### generateVTT(blocks, options)
-
-Generates a WebVTT file from annotated token blocks.
-
-- `blocks`: An array of token arrays, where each inner array represents a block (e.g., by speaker or paragraph)
-- `options`: Optional configuration object
-  - `karaoke`: Enable karaoke mode with timing for each word (default: false)
-  - `minReadingSpeed`: Minimum reading speed in characters per second (default: 20)
-  - `minLineDuration`: Minimum duration for each line in seconds (default: 5/6)
-
-Returns a string containing the WebVTT file content.
-
 ## Demo
 
-A demo of this module is available at [GitHub Pages](https://laurian.github.io/timedtext-vtt/). 
+A demo of this module is available at [GitHub Pages](https://laurian.github.io/timedtext-vtt/).
