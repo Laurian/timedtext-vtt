@@ -237,9 +237,11 @@ export function annotateTokens(
   });
 
   // mark the last token as a subtitle break if it's a sentence end
-  const lastToken = annotatedParagraph[annotatedParagraph.length - 1];
-  lastToken.metadata.break = true;
-  lastToken.metadata.subtitleBreak = true;
+  if (annotatedParagraph.length > 0) {
+    const lastToken = annotatedParagraph[annotatedParagraph.length - 1];
+    lastToken.metadata.break = true;
+    lastToken.metadata.subtitleBreak = true;
+  }
 
   return annotatedParagraph;
 }
