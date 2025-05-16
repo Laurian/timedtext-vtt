@@ -57,11 +57,11 @@ const blocks = [annotatedTokens];
 const vtt = generateVTT(blocks);
 
 // Or customize the VTT generation
-const vtt = generateVTT(blocks, {
-  karaoke: false, // Enable karaoke mode with timing for each word
-  minReadingSpeed: 20, // Minimum reading speed in characters per second
-  minLineDuration: 5/6 // Minimum duration for each line in seconds
-});
+const vtt = generateVTT(blocks, 
+  false, // karaoke: mode with timing for each word
+  20, // Minimum reading speed in characters per second
+  5/6 // Minimum duration for each line in seconds
+);
 
 // The generated VTT can be used with HTML5 video elements
 const video = document.querySelector('video');
