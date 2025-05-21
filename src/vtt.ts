@@ -1,3 +1,4 @@
+import TC, { type FRAMERATE } from 'smpte-timecode';
 import type { Token } from './annotator';
 
 export function generateVTT(
@@ -85,10 +86,71 @@ export function generateVTT(
     });
   });
 
-  return vtt.join('\n');
+  const vttString = vtt.join('\n');
+  console.log({ blocks, vttString });
+  return vttString;
 }
 
-const formatSeconds = (seconds: number): string =>
-  seconds
-    ? new Date(parseFloat(seconds.toFixed(3)) * 1000).toISOString().substring(11, 23)
-    : '00:00:00:000';
+// const formatSeconds = (seconds: number): string =>
+//   seconds
+//     ? new Date(parseFloat(seconds.toFixed(3)) * 1000).toISOString().substring(11, 23)
+//     : '00:00:00:000';
+
+const timecode = ({
+  seconds = 0,
+  frameRate = 1000,
+  dropFrame,
+  partialTimecode = false,
+  offset = 0,
+}: {
+  seconds: number | undefined;
+  // eslint-disable-next-line @typescript-eslint/no-redundant-type-constituents
+  frameRate: FRAMERATE | number;
+  dropFrame?: boolean;
+  partialTimecode: boolean;
+  offset: number | string;
+}): string => {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+  let tc = TC(
+    (seconds || 0) * (frameRate as number),
+    frameRate as FRAMERATE,
+    dropFrame
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+  ).toString() as string;
+
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
+    tc = TC((seconds || 0) * (frameRate as number), frameRate as FRAMERATE, dropFrame)
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
+      .add(new TC(offset, frameRate as FRAMERATE, dropFrame))
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      .toString() as string;
+  } catch (error) {
+    console.log('offset', error);
+  }
+
+  // hh:mm:ss
+  if (partialTimecode) return tc.split(':').slice(0, 3).join(':');
+
+  // hh:mm:ss.mmmm
+  if (frameRate === 1000) {
+    // eslint-disable-next-line prefer-const
+    let [hh, mm, ss, mmm] = tc.split(':');
+    if (mmm.length === 4) mmm = mmm.slice(1, 3);
+    if (mmm.length === 1) return `${hh}:${mm}:${ss}.${mmm}00`;
+    if (mmm.length === 2) return `${hh}:${mm}:${ss}.${mmm}0`;
+    tc = `${hh}:${mm}:${ss}.${mmm}`;
+  }
+
+  return tc;
+};
+
+const formatSeconds = (seconds: number): string => {
+  if (seconds === undefined) return '00:00:00:000';
+  return timecode({
+    seconds,
+    frameRate: 1000,
+    partialTimecode: false,
+    offset: 0,
+  });
+};

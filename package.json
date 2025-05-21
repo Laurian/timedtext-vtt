@@ -1,6 +1,6 @@
 {
   "name": "timedtext-vtt",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "A module for splitting timed text into captions",
   "author": "Laurian Gridinoc <laurian@gridinoc.name>",
   "license": "MIT",
@@ -23,17 +23,23 @@
     "lint:fix": "eslint . --ext ts,tsx --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
-    "prepublishOnly": "npm run clean && npm run build:lib"
+    "prepublishOnly": "npm run clean && npm run build:lib",
+    "postinstall": "patch-package"
   },
   "devDependencies": {
     "@types/node": "^22.15.18",
+    "@types/smpte-timecode": "^1.2.5",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.3.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
+    "patch-package": "^8.0.0",
     "prettier": "^3.2.5",
     "typescript": "~5.8.3",
     "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "smpte-timecode": "1.3.6"
   }
 }
