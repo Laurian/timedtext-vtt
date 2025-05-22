@@ -203,6 +203,10 @@ async function main() {
   if (videoElement) {
     for (let i = 0; i < videoElement.textTracks.length; i++) {
       videoElement.textTracks[i].mode = 'showing';
+      videoElement.textTracks[i].addEventListener('cuechange', () => {
+        const cues = videoElement.textTracks[i].activeCues; // array of current cues
+        console.log({ cues });
+      });
     }
   }
 }
@@ -214,6 +218,10 @@ function reload() {
   if (videoElement) {
     for (let i = 0; i < videoElement.textTracks.length; i++) {
       videoElement.textTracks[i].mode = 'showing';
+      videoElement.textTracks[i].addEventListener('cuechange', () => {
+        const cues = videoElement.textTracks[i].activeCues; // array of current cues
+        console.log({ cues });
+      });
     }
   }
   showDiff();
